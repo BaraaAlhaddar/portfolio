@@ -5,6 +5,7 @@ import logoS from "../../assets/images/logo-s.png";
 import logoSubtitle from "../../assets/images/logo-sub.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default function SideBar() {
   return (
     <div className="nav-bar">
@@ -33,6 +34,26 @@ export default function SideBar() {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" to="/contact" />
         </NavLink>
       </nav>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            rel="linkedin"
+            href="https://www.linkedin.com/in/albaraaalhaddar/"
+          >
+            <FontAwesomeIcon icon={faLinkedin} color="4d4de" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="github"
+            href="https://github.com/BaraaAlhaddar"
+          >
+            <FontAwesomeIcon icon={faGithub} color="4d4de" />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
