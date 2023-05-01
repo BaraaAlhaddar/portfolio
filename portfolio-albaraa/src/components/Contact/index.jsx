@@ -5,11 +5,14 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../AnimationLetters";
+import Logo from "./Logo";
 import "./index.scss";
 
 export default function Contact() {
   const [letterClass, setLetterClass] = useState("text-animate");
   const form = useRef();
+
+  const EMAIL_ID = process.env.REACT_APP_EMAILJS;
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,13 +24,14 @@ export default function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm("gmail", "template_YeJhZkgb", form.current, "your-token")
+      .sendForm("gmail", `service_k8u51mi`, form.current, "WxjStFISVRBxsuMh2")
       .then(
         () => {
           alert("Message successfully sent!");
           window.location.reload(false);
         },
-        () => {
+        (err) => {
+          console.log(err);
           alert("Failed to send the message, please try again");
         }
       );
@@ -44,6 +48,7 @@ export default function Contact() {
               idx={15}
             />
           </h1>
+          <h2>albaraa.alhaddar@gmail.com</h2>
           <p>
             I am interested in a Full-Stack/ Front-End/ Back-End opportunities -
             especially on ambitious or large projects. However, if you have any
@@ -86,23 +91,7 @@ export default function Contact() {
             </form>
           </div>
         </div>
-        <div className="info-map">
-          Zarqa, Jordan.
-          <br />
-          <br />
-          <span>albaraa.alhaddar@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer
-            center={[36.102744146249144, 32.08101420061598]}
-            zoom={13}
-          >
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[36.102744146249144, 32.08101420061598]}>
-              <Popup>I live here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
-        </div>
+        <Logo />
       </div>
       <Loader type="pacman" />
     </>
