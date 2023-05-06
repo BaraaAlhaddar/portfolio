@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import "./index.scss";
 import AnimatedLetters from "../AnimationLetters";
-
+import Project from "./Project";
 export default function Projects() {
   const [letterClass, setLetterClass] = useState("text-animate");
 
@@ -50,6 +50,7 @@ export default function Projects() {
           </p>
           <p>You can see my projects by clicking on them.</p>
         </div>
+        <Project />
       </div>
       <Loader type="pacman" />
     </>
