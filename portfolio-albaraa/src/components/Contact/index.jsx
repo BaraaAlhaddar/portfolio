@@ -29,8 +29,7 @@ export default function Contact() {
         alert("Message successfully sent!");
         window.location.reload(false);
       },
-      (err) => {
-        console.log(err);
+      () => {
         alert("Failed to send the message, please try again");
       }
     );
