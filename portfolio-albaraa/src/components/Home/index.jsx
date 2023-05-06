@@ -7,8 +7,8 @@ import Logo from "./logo";
 import Loader from "react-loaders";
 export default function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const nameArray = `lbaraa Alhaddar`.split("");
-  const jobArray = `Full-Stack Web Developer`.split("");
+  const nameArray = `lbaraa Alhaddar,`.split("");
+  const jobArray = `Web Developer.`.split("");
   useEffect(() => {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
@@ -38,7 +38,7 @@ export default function Home() {
               idx={22}
             />
           </h1>
-          <h2>Mern-Stack Developer</h2>
+          <h2>Full-Stack Web Developer</h2>
           <Link to="contact" className="flat-button">
             CONTACT ME
           </Link>

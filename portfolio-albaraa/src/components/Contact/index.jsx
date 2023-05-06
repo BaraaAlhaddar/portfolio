@@ -1,18 +1,19 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import AnimatedLetters from "../AnimationLetters";
 import Logo from "./Logo";
 import "./index.scss";
 
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const SERVICE_KEY = process.env.REACT_APP_SERVICE_KEY;
+
 export default function Contact() {
   const [letterClass, setLetterClass] = useState("text-animate");
   const form = useRef();
-
-  const EMAIL_ID = process.env.REACT_APP_EMAILJS;
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,18 +24,16 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("gmail", `service_k8u51mi`, form.current, "WxjStFISVRBxsuMh2")
-      .then(
-        () => {
-          alert("Message successfully sent!");
-          window.location.reload(false);
-        },
-        (err) => {
-          console.log(err);
-          alert("Failed to send the message, please try again");
-        }
-      );
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, SERVICE_KEY).then(
+      () => {
+        alert("Message successfully sent!");
+        window.location.reload(false);
+      },
+      (err) => {
+        console.log(err);
+        alert("Failed to send the message, please try again");
+      }
+    );
   };
 
   return (

@@ -8,11 +8,13 @@ import {
   faEnvelope,
   faHome,
   faUser,
-  faSuitcase,
-  faBars,
   faClose,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faSketch,
+} from "@fortawesome/free-brands-svg-icons";
 export default function SideBar() {
   const [showNav, setShowNav] = useState(false);
 
@@ -42,12 +44,22 @@ export default function SideBar() {
 
         <NavLink
           activeclassname="active"
+          className="projects-link"
+          to="/projects"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faSketch} color="#4d4d4e" />
+        </NavLink>
+
+        <NavLink
+          activeclassname="active"
           className="contact-link"
           to="/contact"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+
         <FontAwesomeIcon
           onClick={() => setShowNav(false)}
           icon={faClose}
