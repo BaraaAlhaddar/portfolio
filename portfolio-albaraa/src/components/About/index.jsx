@@ -48,7 +48,7 @@ export default function About() {
             people.
           </p>
         </div>
-        <div className="stage-cube-cont">
+        <div className="stage-cube-cont small-screen">
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />

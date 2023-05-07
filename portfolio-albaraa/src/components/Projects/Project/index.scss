@@ -27,3 +27,9 @@
   stroke: #ffd700;
   stroke-width: 10;
 }
+
+@media screen and (max-width: 1200px) {
+  .project-container {
+    position: relative;
+  }
+}

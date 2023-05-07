@@ -4,7 +4,7 @@ import aLogo from "../../../assets/images/logo-s.png";
 
 export default function Logo() {
   return (
-    <div className="logo-container">
+    <div className="logo-container small-screen">
       <img className="solid-logo" src={aLogo} alt="baraa" />
     </div>
   );

@@ -9,6 +9,7 @@ import {
   faHome,
   faUser,
   faClose,
+  faSnowboarding,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -48,7 +49,7 @@ export default function SideBar() {
           to="/projects"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faSketch} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faSnowboarding} color="#4d4d4e" />
         </NavLink>
 
         <NavLink

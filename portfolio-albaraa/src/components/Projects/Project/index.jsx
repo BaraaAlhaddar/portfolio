@@ -6,7 +6,7 @@ import project_2 from "../../../assets/images/Screenshot_3.png";
 
 export default function Project() {
   return (
-    <div className="project-container">
+    <div className="project-container project-small">
       <a
         target="_blank"
         href="https://github.com/C7-BaraaAlhaddar/MERAKI_Academy_Project_4"
