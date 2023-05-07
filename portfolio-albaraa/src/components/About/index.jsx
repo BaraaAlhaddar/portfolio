@@ -34,18 +34,52 @@ export default function About() {
 
           <p>
             I'm a Self-motivated, Detail-oriented, and organized software
-            developer who has a strong passion for coding looking for a role in
-            an established IT company with the opportunity to work with the
-            latest technologies on challenging and diverse projects.
+            developer who has a strong passion for coding with the ability to
+            learn quickly and adapt to new technologies. Analytical and Likes to
+            solve complex problems meticulously.
           </p>
           <p align="LEFT">
-            I haves strong ability to learn quickly and adapt to new
-            technologies. Analytical and Likes to solve complex problems
-            meticulously. Accountable and takes ownership seriously.
+            I'm a full-stack web developer graduated from MERAKI Academy in
+            which a got more than 700h of intense coding using html, css, js,
+            react.js, node.js and more.
           </p>
+          <br />
+          <br />
           <p>
-            I'm a caring social person who wants to meet and work with new
-            people.
+            {" "}
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={`My Skills`.split("")}
+                idx={30}
+              />
+            </h1>
+            <p>
+              My Front-End skills are
+              <span className="skills"> HTML5</span>,
+              <span className="skills"> CSS3</span>,{" "}
+              <span className="skills"> JavaScript</span>,{" "}
+              <span className="skills"> React</span>,{" "}
+              <span className="skills"> Redux</span>,{" "}
+              <span className="skills"> Tailwind UI</span>,{" "}
+              <span className="skills"> Material UI</span>,{" "}
+              <span className="skills"> Bootstrap</span>,{" "}
+              <span className="skills"> REST</span>,{" "}
+              <span className="skills"> WebSocket</span>,
+              <span className="skills"> jQuery</span>.
+            </p>
+            <p align="LEFT">
+              My Back-End skills are <span className="skills">Node</span> ;
+              <span className="skills"> Express</span>,{" "}
+              <span className="skills"> MongoDB</span>,{" "}
+              <span className="skills"> PostgreSQL</span>,{" "}
+              <span className="skills"> SQL</span>,{" "}
+              <span className="skills"> WebSocket</span>,{" "}
+              <span className="skills"> REST</span>,{" "}
+              <span className="skills"> git</span>,{" "}
+              <span className="skills"> npm</span>,{" "}
+              <span className="skills"> AWS</span>.
+            </p>
           </p>
         </div>
         <div className="stage-cube-cont small-screen">

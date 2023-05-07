@@ -19,45 +19,13 @@ export default function Projects() {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={`My Skills`.split("")}
-              idx={30}
+              strArray={`My Projects`.split("")}
+              idx={15}
             />
           </h1>
-          <p>
-            My Front-End skills are
-            <span className="skills"> HTML5</span>,
-            <span className="skills"> CSS3</span>,{" "}
-            <span className="skills"> JavaScript</span>,{" "}
-            <span className="skills"> React</span>,{" "}
-            <span className="skills"> Redux</span>,{" "}
-            <span className="skills"> Tailwind UI</span>,{" "}
-            <span className="skills"> Material UI</span>,{" "}
-            <span className="skills"> Bootstrap</span>,{" "}
-            <span className="skills"> REST</span>,{" "}
-            <span className="skills"> WebSocket</span>,
-            <span className="skills"> jQuery</span>.
-          </p>
-          <p align="LEFT">
-            My Back-End skills are <span className="skills">Node</span> ;
-            <span className="skills"> Express</span>,{" "}
-            <span className="skills"> MongoDB</span>,{" "}
-            <span className="skills"> PostgreSQL</span>,{" "}
-            <span className="skills"> SQL</span>,{" "}
-            <span className="skills"> WebSocket</span>,{" "}
-            <span className="skills"> REST</span>,{" "}
-            <span className="skills"> git</span>,{" "}
-            <span className="skills"> npm</span>,{" "}
-            <span className="skills"> AWS</span>.
-          </p>
+
           <br />
           <p>
-            <h1>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={`My Projects`.split("")}
-                idx={90}
-              />
-            </h1>
             <a
               target="_blank"
               href="https://illustrious-semifreddo-4a4508.netlify.app/login"

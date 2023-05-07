@@ -10,12 +10,9 @@ import {
   faUser,
   faClose,
   faSnowboarding,
+  faSoccerBall,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-  faSketch,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default function SideBar() {
   const [showNav, setShowNav] = useState(false);
 
@@ -49,7 +46,7 @@ export default function SideBar() {
           to="/projects"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faSnowboarding} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faSoccerBall} color="#4d4d4e" />
         </NavLink>
 
         <NavLink
