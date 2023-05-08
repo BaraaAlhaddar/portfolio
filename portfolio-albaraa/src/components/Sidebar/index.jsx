@@ -9,7 +9,7 @@ import {
   faHome,
   faUser,
   faClose,
-  faSnowboarding,
+  faBars,
   faSoccerBall,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -86,6 +86,13 @@ export default function SideBar() {
           </a>
         </li>
       </ul>
+      <FontAwesomeIcon
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color="#ffd700"
+        size="3x"
+        className="hamburger-icon"
+      />
     </div>
   );
 }
