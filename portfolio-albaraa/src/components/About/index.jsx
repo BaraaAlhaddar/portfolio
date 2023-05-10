@@ -33,15 +33,17 @@ export default function About() {
           </h1>
 
           <p>
-            I'm a Self-motivated, Detail-oriented, and organized software
-            developer who has a strong passion for coding with the ability to
-            learn quickly and adapt to new technologies. Analytical and Likes to
-            solve complex problems meticulously.
+            I'm a passionate and detail-oriented software developer with a
+            strong ability to quickly learn and adapt to new technologies.
+            Enjoys meticulously solving complex problems and takes
+            accountability and ownership seriously. Self-motivated and
+            organized, with a genuine love for coding. A valuable asset for any
+            team, consistently delivering high-quality results.
           </p>
           <p align="LEFT">
-            I'm a full-stack web developer graduated from MERAKI Academy in
-            which a got more than 700h of intense coding using html, css, js,
-            react.js, node.js and more.
+            A full-stack web developer graduated from MERAKI Academy in which a
+            got more than 700h of intense coding using html, css, js, react.js,
+            node.js and more.
           </p>
           <br />
           <br />
