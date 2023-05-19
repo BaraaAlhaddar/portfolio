@@ -68,6 +68,7 @@ export default function About() {
               <span className="skills"> Bootstrap</span>,{" "}
               <span className="skills"> REST</span>,{" "}
               <span className="skills"> WebSocket</span>,
+              <span className="skills"> Sass</span>,
               <span className="skills"> jQuery</span>.
             </p>
             <p align="LEFT">
@@ -79,7 +80,8 @@ export default function About() {
               <span className="skills"> WebSocket</span>,{" "}
               <span className="skills"> REST</span>,{" "}
               <span className="skills"> git</span>,{" "}
-              <span className="skills"> npm</span>,{" "}
+              <span className="skills"> NPM</span>,{" "}
+              <span className="skills"> FireBase</span>,{" "}
               <span className="skills"> AWS</span>.
             </p>
           </p>
